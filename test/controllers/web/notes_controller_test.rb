@@ -7,5 +7,6 @@ class Web::NotesControllerTest < ActionDispatch::IntegrationTest
     get '/web/notes'
 
     assert { response.status == 200 }
+    assert { response.body.scan(/<tr>/).count == 3 }
   end
 end

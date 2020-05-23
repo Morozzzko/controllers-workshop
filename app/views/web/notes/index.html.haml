@@ -11,8 +11,8 @@
     - @notes.each do |note|
       %tr
         %td
-          = @note.id
+          = note.id
         %td
-          = @note.comment
+          = note.content
         %td
-          = @note.author.id
+          = note.user.id
