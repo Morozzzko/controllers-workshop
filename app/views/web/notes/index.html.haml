@@ -1,0 +1,18 @@
+%h1
+  Every note in existence
+
+%table
+  %thead
+    %tr
+      %th ID
+      %th Comment
+      %th Author
+  %tbody
+    - @notes.each do |note|
+      %tr
+        %td
+          = @note.id
+        %td
+          = @note.comment
+        %td
+          = @note.author.id
