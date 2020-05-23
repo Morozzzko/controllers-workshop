@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Notes::CommentsControllerTest < ActionDispatch::IntegrationTest
+class Web::Notes::DownvotesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

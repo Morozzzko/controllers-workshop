@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class User::NotesControllerTest < ActionDispatch::IntegrationTest
+class Web::User::NotesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
