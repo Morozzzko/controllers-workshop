@@ -2,7 +2,7 @@
 
 class Web::NotesController < Web::ApplicationController
   def create
-    @note = Note.create!(author: current_user, **note_params)
+    @note = Note.create!(note_params)
   end
 
   def index
@@ -12,6 +12,6 @@ class Web::NotesController < Web::ApplicationController
   private
 
   def note_params
-    params.require(:note).permit(:content)
+    params.require(:note).permit(:content).merge(user: current_user)
   end
 end
