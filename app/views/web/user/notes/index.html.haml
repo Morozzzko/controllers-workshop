@@ -1,0 +1,15 @@
+%h1
+  My own notes
+
+%table
+  %thead
+    %tr
+      %th ID
+      %th Comment
+  %tbody
+    - @notes.each do |note|
+      %tr
+        %td
+          = note.id
+        %td
+          = note.content

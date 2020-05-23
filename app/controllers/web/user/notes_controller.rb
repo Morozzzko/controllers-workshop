@@ -2,6 +2,6 @@
 
 class Web::User::NotesController < Web::ApplicationController
   def index
-    @notes = Note.where(author: current_user)
+    @notes = current_user.notes
   end
 end
