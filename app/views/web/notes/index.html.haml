@@ -5,8 +5,9 @@
   %thead
     %tr
       %th ID
-      %th Comment
+      %th Content
       %th Author
+      %td Actions
   %tbody
     - @notes.each do |note|
       %tr
@@ -16,3 +17,5 @@
           = note.content
         %td
           = note.user.id
+        %td
+          = link_to(web_comments_path(note), title: "See comments")
